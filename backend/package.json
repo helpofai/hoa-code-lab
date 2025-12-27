@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:init": "node src/scripts/initDb.js",
+    "db:update": "node src/scripts/updateSchema.js",
+    "db:update:v2": "node src/scripts/updateSchemav2.js",
+    "db:update:notifications": "node src/scripts/updateSchemaNotifications.js",
+    "db:update:views": "node src/scripts/updateSchemaViews.js",
+    "db:update:likes": "node src/scripts/updateSchemaLikes.js",
+    "db:update:shares": "node src/scripts/updateSchemaShares.js",
+    "db:sync": "node src/scripts/syncSchema.js",
+    "db:settings": "node src/scripts/createSettingsTable.js",
+    "db:check": "node src/scripts/checkSchema.js",
+    "db:promote": "node src/scripts/promoteAdmin.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.16.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
