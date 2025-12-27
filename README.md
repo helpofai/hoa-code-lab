@@ -76,6 +76,9 @@ npm run db:sync
 
 # Step 3: Initialize Global Site Settings
 npm run db:settings
+
+# Step 3: Initialize assets script to backend/package.json.
+npm run db:update:assets
 ```
 
 ### 3. Running Development Servers
