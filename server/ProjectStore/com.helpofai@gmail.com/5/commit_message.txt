@@ -1,0 +1,4 @@
+chore: Update version to 4.1.0
+
+- Updated plugin version to 4.1.0 in all relevant files.
+- Updated RELEASE_NOTES.md with the latest changes.
